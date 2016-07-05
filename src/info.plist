@@ -181,25 +181,6 @@
 			</dict>
 			<dict>
 				<key>destinationuid</key>
-				<string>F6FB526A-A41A-47A5-8709-278BCEDF9343</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-			</dict>
-			<dict>
-				<key>destinationuid</key>
-				<string>27D83DFB-92B6-4E0B-9153-B77E66618DE6</string>
-				<key>modifiers</key>
-				<integer>524288</integer>
-				<key>modifiersubtext</key>
-				<string>Open path in finder</string>
-			</dict>
-		</array>
-		<key>F6FB526A-A41A-47A5-8709-278BCEDF9343</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
 				<string>B59A6419-715B-475A-A795-35CD66CCF192</string>
 				<key>modifiers</key>
 				<integer>0</integer>
@@ -216,6 +197,14 @@
 			</dict>
 			<dict>
 				<key>destinationuid</key>
+				<string>27D83DFB-92B6-4E0B-9153-B77E66618DE6</string>
+				<key>modifiers</key>
+				<integer>524288</integer>
+				<key>modifiersubtext</key>
+				<string>Open path in finder</string>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
 				<string>2E2D6E53-2D3F-4228-A92D-14FFA1A1E456</string>
 				<key>modifiers</key>
 				<integer>0</integer>
@@ -227,11 +216,11 @@
 	<key>createdby</key>
 	<string>Edwon Lim</string>
 	<key>description</key>
-	<string>WebStorm</string>
+	<string>Atom</string>
 	<key>disabled</key>
 	<false/>
 	<key>name</key>
-	<string>WebStorm</string>
+	<string>Atom</string>
 	<key>objects</key>
 	<array>
 		<dict>
@@ -282,7 +271,7 @@ require('preCpWorkspace.php');
 				<key>escaping</key>
 				<integer>0</integer>
 				<key>script</key>
-				<string>/usr/local/bin/wstorm "{query}"</string>
+				<string>/usr/local/bin/atom "{query}"</string>
 				<key>type</key>
 				<integer>0</integer>
 			</dict>
@@ -328,7 +317,7 @@ require('preCpWorkspace.php');
 				<key>escaping</key>
 				<integer>100</integer>
 				<key>keyword</key>
-				<string>ws</string>
+				<string>atom</string>
 				<key>queuedelaycustom</key>
 				<integer>3</integer>
 				<key>queuedelayimmediatelyinitially</key>
@@ -339,11 +328,11 @@ require('preCpWorkspace.php');
 				<integer>1</integer>
 				<key>script</key>
 				<string>$query = "{query}";
-require_once("webstorm.php");</string>
+require_once("atom.php");</string>
 				<key>subtext</key>
 				<string>Project Name</string>
 				<key>title</key>
-				<string>WebStorm Open</string>
+				<string>Atom Open</string>
 				<key>type</key>
 				<integer>1</integer>
 				<key>withspace</key>
@@ -353,23 +342,6 @@ require_once("webstorm.php");</string>
 			<string>alfred.workflow.input.scriptfilter</string>
 			<key>uid</key>
 			<string>EE6388C0-6517-4252-A760-22BE377DCB5F</string>
-			<key>version</key>
-			<integer>0</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>paths</key>
-				<array>
-					<string>/Applications/WebStorm.app</string>
-				</array>
-				<key>toggle</key>
-				<false/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.launchfiles</string>
-			<key>uid</key>
-			<string>F6FB526A-A41A-47A5-8709-278BCEDF9343</string>
 			<key>version</key>
 			<integer>0</integer>
 		</dict>
@@ -430,7 +402,7 @@ require('preCpWorkspace.php');
 				<key>text</key>
 				<string>Open {query} .</string>
 				<key>title</key>
-				<string>WebStorm</string>
+				<string>Atom</string>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.output.notification</string>
@@ -464,11 +436,11 @@ require('preCpWorkspace.php');
 				<key>argumenttype</key>
 				<integer>2</integer>
 				<key>keyword</key>
-				<string>open</string>
+				<string>atom</string>
 				<key>subtext</key>
-				<string>Open current Finder directory in WebStorm</string>
+				<string>Open current Finder directory in Atom</string>
 				<key>text</key>
-				<string>Finder → WebStorm</string>
+				<string>Finder → Atom</string>
 				<key>withspace</key>
 				<false/>
 			</dict>
@@ -503,7 +475,7 @@ require('preCpWorkspace.php');
 			<dict>
 				<key>paths</key>
 				<array>
-					<string>/Applications/WebStorm.app</string>
+					<string>/Applications/Atom.app</string>
 				</array>
 				<key>toggle</key>
 				<false/>
@@ -611,7 +583,7 @@ require('preCpWorkspace.php');
 				<key>text</key>
 				<string>Operation{query} is successful!</string>
 				<key>title</key>
-				<string>WebStorm</string>
+				<string>Atom</string>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.output.notification</string>
@@ -628,7 +600,7 @@ require('preCpWorkspace.php');
 				<key>escaping</key>
 				<integer>100</integer>
 				<key>keyword</key>
-				<string>ws</string>
+				<string>atom</string>
 				<key>queuedelaycustom</key>
 				<integer>3</integer>
 				<key>queuedelayimmediatelyinitially</key>
@@ -643,7 +615,7 @@ require_once("workspace.php");</string>
 				<key>subtext</key>
 				<string>workspace</string>
 				<key>title</key>
-				<string>WebStorm Set Workspaces</string>
+				<string>Atom Set Workspaces</string>
 				<key>type</key>
 				<integer>1</integer>
 				<key>withspace</key>
@@ -708,7 +680,7 @@ require('setWorkspace.php');
 				<key>text</key>
 				<string>Add workspaces "{query}" success!</string>
 				<key>title</key>
-				<string>WebStorm</string>
+				<string>Atom</string>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.output.notification</string>
@@ -744,9 +716,9 @@ require('setWorkspace.php');
 				<key>keyword</key>
 				<string>add</string>
 				<key>subtext</key>
-				<string>Add current Finder directory to WebStorm workspace</string>
+				<string>Add current Finder directory to Atom workspace</string>
 				<key>text</key>
-				<string>Finder → WebStorm Workspace</string>
+				<string>Finder → Atom Workspace</string>
 				<key>withspace</key>
 				<false/>
 			</dict>
@@ -873,11 +845,6 @@ require('setWorkspace.php');
 			<real>1010</real>
 		</dict>
 		<key>EE6388C0-6517-4252-A760-22BE377DCB5F</key>
-		<dict>
-			<key>ypos</key>
-			<real>150</real>
-		</dict>
-		<key>F6FB526A-A41A-47A5-8709-278BCEDF9343</key>
 		<dict>
 			<key>ypos</key>
 			<real>150</real>

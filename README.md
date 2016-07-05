@@ -1,10 +1,8 @@
-## WebStorm Workflow for Alfred
+## WebStorm Workflow for Atom
 
 ### 简介
 
-WebStorm 工作流 for Alfred
-
-WebStorm -> Tools -> Create Command-line Launcher 添加 /usr/local/bin/wstorm 命令
+Atom 工作流 for Alfred
 
 先添加 workspace，再使用
 
@@ -12,11 +10,11 @@ WebStorm -> Tools -> Create Command-line Launcher 添加 /usr/local/bin/wstorm �
 
 ### 打开操作
 
-> ws query
+> atom query
 
 通过 query 过滤文件夹，并显示。回车用WebStorm打开，command 用 Terminal 打开， option 用 Finder 打开。
 
-> ws  (输入空格)
+> atom (输入空格)
 
 查看最近打开的项目列表
 
@@ -26,19 +24,19 @@ WebStorm -> Tools -> Create Command-line Launcher 添加 /usr/local/bin/wstorm �
 
 ### WorkSpace 操作
 
-> ws add:/path/to/code
+> atom add:/path/to/code
 
 添加 workspace
 
-> ws rm:/path/to/code
+> atom rm:/path/to/code
 
 移除 workspace
 
-> ws clear
+> atom clear
 
 清空 workspace 列表
 
-> ws list
+> atom list
 
 显示 workspace 列表
 

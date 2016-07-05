@@ -5,7 +5,7 @@ $w = new Workflows();
 
 $workspaces = explode(';', $w->get('workspace', 'settings.plist'));
 $recents = explode(';', $w->get('recents', 'settings.plist'));
-$binPath = '/usr/local/bin/wstorm';
+$binPath = '/usr/local/bin/atom';
 $doSearch = false;
 
 if (!isset($query)) {
@@ -13,7 +13,7 @@ if (!isset($query)) {
 }
 
 if (!file_exists($binPath)) {
-	$w->result('error', '', 'Not Found Command "wstorm"', 'WebStorm -> Tools -> Create Command-line Launcher', "icon.png", false);
+	$w->result('error', '', 'Not Found Command "atom"', '', "icon.png", false);
 	echo $w->toxml();
 	return;
 }
